@@ -10,14 +10,14 @@
 <body>
   <main>
     <h1>Gold Rate privacy policy</h1>
-    <p class="muted">Effective 1 October 2026</p>
+    <p class="muted">Effective 7 October 2026</p>
 
     <p>This policy explains what the <strong>Gold Rate</strong> app (on Google Play as "Gold Rate: Gold Price Live") does with information. The app is made by <strong>Kelmora Labs</strong>, the developer name of Bharatbhai Mafatlal Soni, India ("we", "us"). Questions: <a href="mailto:kelmoralabs@gmail.com">kelmoralabs@gmail.com</a>.</p>
 
     <h2>In short</h2>
     <ul>
       <li>No login. We never ask for your name, phone number or email.</li>
-      <li>Your location is used only on your phone to find your city. It is never sent to us.</li>
+      <li>Your location is used only on your phone to find your city; the location itself is never sent to us. The city you choose (in India) or your country (elsewhere) is kept with your price alerts and morning rate, and is part of their notification text.</li>
       <li>Your Gold Locker items and photos stay on your phone.</li>
       <li>Price alerts and the morning rate are kept on our server with an anonymous code, so they can ring when the app is closed. You can delete them in the app.</li>
       <li>We count how the app is used and receive crash reports, to fix problems. These never include your name or contact details.</li>
@@ -28,8 +28,8 @@
 
     <h2>What stays on your phone</h2>
     <ul>
-      <li><strong>Location.</strong> Only when you tap "Use my location", the app reads your approximate location (never the precise one), finds the nearest city on its list and forgets the location. It is never sent to us or anyone else.</li>
-      <li><strong>Country.</strong> The app guesses your country from the SIM card and the phone's time zone, on the phone. No permission is needed and nothing is sent.</li>
+      <li><strong>Location.</strong> Only when you tap "Use my location", the app reads your approximate location (never the precise one), finds the nearest city on its list and forgets the location. The location itself is never sent to us or anyone else. The city you choose (in India) or your country (elsewhere) is kept with your price alerts and morning rate, and is part of their notification text (below).</li>
+      <li><strong>Country.</strong> The app guesses your country from the SIM card and the phone's time zone, on the phone. No permission is needed. The country is sent only with usage counts and feedback (below) and, if you use them, with your morning rate and alerts.</li>
       <li><strong>Gold Locker.</strong> Your items, bills and photos are kept only on your phone, behind your phone's lock if you choose. A backup file is made only when you ask; it is locked with your password and saved wherever you choose.</li>
       <li><strong>Settings</strong> (language, theme, city, units and so on), the home screen widget and "Hear the rate" (your phone's own voice) work on the phone.</li>
       <li><strong>Camera and photos</strong> are used only when you add a photo to the Gold Locker.</li>
@@ -39,15 +39,15 @@
 
     <p><strong>Rates.</strong> The app downloads the latest rates, charts and news lists as public files from our servers (Supabase and Cloudflare). Like any website, these servers see your phone's internet address when it asks; we do not use it to identify you.</p>
 
-    <p><strong>Price alerts, the morning rate and smart alerts.</strong> When you set your first alert or turn on the morning rate, the app creates an anonymous code for your phone (no account, no login) on our server (Supabase). With it we keep:</p>
+    <p><strong>Price alerts, the morning rate and smart alerts.</strong> When you allow notifications (this turns on the morning rate), turn on the morning rate, or set your first alert, the app creates an anonymous code for your phone (no account, no login) on our server (Supabase). With it we keep:</p>
     <ul>
       <li>your phone's notification address (a push token from Expo and Google Firebase Cloud Messaging, which deliver the notifications);</li>
       <li>each alert: the metal, purity, weight, the city (India) or money (other countries), the target price, up or down, and its words in your language;</li>
-      <li>the morning rate's time and prices, your time zone, and your smart alert choices.</li>
+      <li>the morning rate's time, prices and words (they name your city or country), your time zone, and your smart alert choices.</li>
     </ul>
     <p>Only your phone can read or change these, and our server uses them only to send your notifications. Deleting an alert in the app deletes it from our server at once; turning the morning rate off stops it. If the app is removed, the notification address stops working and our server clears it.</p>
 
-    <p><strong>Usage counts (Google Firebase Analytics).</strong> The app counts things like which screens are opened and which features are used, with an app-install code from Firebase, the phone's model, Android version, country and language. It does not collect the advertising ID, and never your name or contact details. We use it only to understand and improve the app. In the European Economic Area, the UK and Switzerland nothing is counted unless you allow it.</p>
+    <p><strong>Usage counts (Google Firebase Analytics).</strong> The app counts things like which screens are opened and which features are used, with an app-install code from Firebase, the phone's model, Android version, language, and the country and general area (such as the city) that Google works out from the internet address; the address itself is not kept. It does not collect the advertising ID, and never your name or contact details. We use it only to understand and improve the app. In the European Economic Area, the UK and Switzerland nothing is counted unless you allow it.</p>
 
     <p><strong>Crash reports and feedback (Sentry).</strong> When the app crashes, a report is sent with the error, the app version, the phone's model and Android version. If you send "Feedback &amp; bug report", your message is sent with the app's language, country, theme and version. Please don't write personal details in it. We use these only to fix problems.</p>
 
@@ -95,12 +95,12 @@
     <p>Everything the app sends travels encrypted (HTTPS). On our server, each phone can reach only its own alerts.</p>
 
     <h2>Changes</h2>
-    <p>If this policy changes, we update this page and its date. Important changes are also shown in the app.</p>
+    <p>If this policy changes, we update this page and its date.</p>
 
     <h2>Contact</h2>
     <p>Kelmora Labs · <a href="mailto:kelmoralabs@gmail.com">kelmoralabs@gmail.com</a></p>
 
-    <footer><a href="/">Our apps</a> · <a href="/gold-rate/terms.html">Terms of use</a></footer>
+    <footer><a href="/">Our apps</a> · <a href="/gold-rate/terms.html">Terms of use</a> · <a href="/gold-rate/licences.html">Open-source licences</a></footer>
   </main>
 </body>
 </html>
