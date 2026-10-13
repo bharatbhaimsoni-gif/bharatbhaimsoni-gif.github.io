@@ -10,7 +10,7 @@
 <body>
   <main>
     <h1>Gold Rate privacy policy</h1>
-    <p class="muted">Effective 7 October 2026</p>
+    <p class="muted">Effective 13 October 2026</p>
 
     <p>This policy explains what the <strong>Gold Rate</strong> app (on Google Play as "Gold Rate: Gold Price Live") does with information. The app is made by <strong>Kelmora Labs</strong>, the developer name of Bharatbhai Mafatlal Soni, India ("we", "us"). Questions: <a href="mailto:kelmoralabs@gmail.com">kelmoralabs@gmail.com</a>.</p>
 
@@ -18,9 +18,9 @@
     <ul>
       <li>No login. We never ask for your name, phone number or email.</li>
       <li>Your location is used only on your phone to find your city; the location itself is never sent to us. The city you choose (in India) or your country (elsewhere) is kept with your price alerts and morning rate, and is part of their notification text.</li>
-      <li>Your Gold Locker items and photos stay on your phone.</li>
-      <li>Price alerts and the morning rate are kept on our server with an anonymous code, so they can ring when the app is closed. You can delete them in the app.</li>
-      <li>We count how the app is used and receive crash reports, to fix problems. These never include your name or contact details.</li>
+      <li>Your Gold Locker items and photos are never sent to us.</li>
+      <li>Price alerts are kept on our server with an anonymous code, and the morning rate's text without any link to your phone, so they can ring when the app is closed. You can delete them in the app (Settings › Privacy policy › Delete my data).</li>
+      <li>We count how the app is used and receive crash reports, to fix problems. These never include your name or contact details. You can turn the counting off in Settings.</li>
       <li>Free users see ads from Google AdMob, which may use your phone's advertising ID. Where the law asks for it, you choose first.</li>
       <li>Purchases go through Google Play. We never see your card or payment details.</li>
       <li>We do not sell your information.</li>
@@ -30,7 +30,7 @@
     <ul>
       <li><strong>Location.</strong> Only when you tap "Use my location", the app reads your approximate location (never the precise one), finds the nearest city on its list and forgets the location. The location itself is never sent to us or anyone else. The city you choose (in India) or your country (elsewhere) is kept with your price alerts and morning rate, and is part of their notification text (below).</li>
       <li><strong>Country.</strong> The app guesses your country from the SIM card and the phone's time zone, on the phone. No permission is needed. The country is sent only with usage counts and feedback (below) and, if you use them, with your morning rate and alerts.</li>
-      <li><strong>Gold Locker.</strong> Your items, bills and photos are kept only on your phone, behind your phone's lock if you choose. A backup file is made only when you ask; it is locked with your password and saved wherever you choose.</li>
+      <li><strong>Gold Locker.</strong> Your items, bills and photos are never sent to us: they are kept on your phone, behind your phone's lock if you choose. If your phone's own Google backup is on, Android also keeps them in that backup in your Google account. A Gold Rate backup file is made only when you ask; it is locked with your password and saved wherever you choose.</li>
       <li><strong>Settings</strong> (language, theme, city, units and so on), the home screen widget and "Hear the rate" (your phone's own voice) work on the phone.</li>
       <li><strong>Camera and photos</strong> are used only when you add a photo to the Gold Locker.</li>
     </ul>
@@ -39,15 +39,15 @@
 
     <p><strong>Rates.</strong> The app downloads the latest rates, charts and news lists as public files from our servers (Supabase and Cloudflare). Like any website, these servers see your phone's internet address when it asks; we do not use it to identify you.</p>
 
-    <p><strong>Price alerts, the morning rate and smart alerts.</strong> When you allow notifications (this turns on the morning rate), turn on the morning rate, or set your first alert, the app creates an anonymous code for your phone (no account, no login) on our server (Supabase). With it we keep:</p>
+    <p><strong>Price alerts, the morning rate and smart alerts.</strong> When you set your first price alert or smart alert, the app makes a random code and key for your phone (no account, no login) and keeps them on the phone. Our server (Supabase) keeps the code, a fingerprint of the key (never the key itself) and:</p>
     <ul>
-      <li>your phone's notification address (a push token from Expo and Google Firebase Cloud Messaging, which deliver the notifications);</li>
-      <li>each alert: the metal, purity, weight, the city (India) or money (other countries), the target price, up or down, and its words in your language;</li>
-      <li>the morning rate's time, prices and words (they name your city or country), your time zone, and your smart alert choices.</li>
+      <li>your phone's notification address (a push token from Expo and Google Firebase Cloud Messaging, which deliver the notifications), your time zone and your smart alert choices;</li>
+      <li>each alert: the metal, purity, weight, the city (India) or money (other countries), the target price, up or down, and its words in your language.</li>
     </ul>
-    <p>Only your phone can read or change these, and our server uses them only to send your notifications. Deleting an alert in the app deletes it from our server at once; turning the morning rate off stops it. If the app is removed, the notification address stops working and our server clears it.</p>
+    <p>For the morning rate, the app sends its text (the time, prices and words, which name your city or country, and the time zone) to our server, which keeps it without any link to your phone. Your phone then joins the Google Firebase topic that delivers that text; everyone with the same text shares it. The app also joins Firebase topics for our announcements (everyone, your app language, and India or other countries).</p>
+    <p>Only your phone can read or change its alerts, and our server uses them only to send your notifications. Deleting an alert in the app deletes it from our server at once, and "Delete my data" deletes them all with your phone's record. If the app is removed, our server deletes the phone's record 30 days after the notification service reports it, or after 400 days without use.</p>
 
-    <p><strong>Usage counts (Google Firebase Analytics).</strong> The app counts things like which screens are opened and which features are used, with an app-install code from Firebase, the phone's model, Android version, language, and the country and general area (such as the city) that Google works out from the internet address; the address itself is not kept. It does not collect the advertising ID, and never your name or contact details. We use it only to understand and improve the app. In the European Economic Area, the UK and Switzerland nothing is counted unless you allow it.</p>
+    <p><strong>Usage counts (Google Firebase Analytics).</strong> The app counts things like which screens are opened and which features are used, with an app-install code from Firebase, the phone's model, Android version, language, and the country and general area (such as the city) that Google works out from the internet address; the address itself is not kept. It does not collect the advertising ID, and never your name or contact details. We use it only to understand and improve the app. In the European Economic Area, the UK and Switzerland nothing is counted unless you allow it. Everywhere, you can turn it off at any time in Settings › Privacy policy › Usage counts.</p>
 
     <p><strong>Crash reports and feedback (Sentry).</strong> When the app crashes, a report is sent with the error, the app version, the phone's model and Android version. If you send "Feedback &amp; bug report", your message is sent with the app's language, country, theme and version. Please don't write personal details in it. We use these only to fix problems.</p>
 
@@ -74,18 +74,30 @@
 
     <h2>How long we keep it</h2>
     <ul>
-      <li>Alerts and morning rate settings: until you delete them, or until the notification address stops working.</li>
+      <li>Alerts and your phone's record: until you delete them in the app, or 30 days after the notification service reports the app removed, or after 400 days without use.</li>
+      <li>Morning rate texts: until no phone has used them for 400 days.</li>
       <li>Usage counts and crash reports: for a limited time set by Google and Sentry, then deleted automatically.</li>
       <li>Purchase records: as long as needed to restore your purchases and as the law requires.</li>
     </ul>
 
     <h2>Your choices and rights</h2>
     <ul>
-      <li>Delete alerts in the app (Tools › Price alerts) and turn off notifications (Settings › Notifications). All the ways to delete your data: <a href="/gold-rate/delete-data.html">Delete your data</a>.</li>
+      <li>Delete everything our server keeps about your phone in the app: Settings › Privacy policy › Delete my data (or one alert in Tools › Price alerts). Turn off notifications in Settings › Notifications. All the ways to delete your data: <a href="/gold-rate/delete-data.html">Delete your data</a>.</li>
+      <li>Turn usage counts off at any time: Settings › Privacy policy › Usage counts.</li>
       <li>Change your ad choices (Settings › Privacy choices, where shown) or reset your advertising ID.</li>
       <li>Location, camera and photos are asked for only when you use them; you can say no, or turn them off in your phone's settings.</li>
       <li>Removing the app deletes everything it keeps on your phone.</li>
-      <li>Depending on where you live, you may ask to see, correct or delete information about you, or object to its use. Write to <a href="mailto:kelmoralabs@gmail.com">kelmoralabs@gmail.com</a>. Because we don't know who you are, we may ask for details that help us find your phone's anonymous data.</li>
+      <li>Depending on where you live, you may ask to see, correct or delete information about you, or object to its use. Write to <a href="mailto:kelmoralabs@gmail.com">kelmoralabs@gmail.com</a>; we reply within 30 days. Because we don't know who you are, we may ask for details that help us find your phone's anonymous data.</li>
+      <li>If you live in the European Economic Area, the UK or Switzerland, you can also complain to your local data protection authority.</li>
+    </ul>
+
+    <h2>India</h2>
+    <p>For users in India (Digital Personal Data Protection Act, 2023):</p>
+    <ul>
+      <li><strong>What we use and why:</strong> your phone's alert code, notification address and price alerts, to send your notifications; usage counts (Google Firebase), to understand and improve the app; crash reports (Sentry), to fix problems; the advertising ID (Google AdMob), to show and measure ads.</li>
+      <li><strong>Saying no:</strong> turn usage counts off in Settings › Privacy policy › Usage counts; reset or delete your advertising ID in your phone's settings (Google › Ads); turn off any notification in Settings › Notifications.</li>
+      <li><strong>Deleting:</strong> Settings › Privacy policy › Delete my data, or the other ways on <a href="/gold-rate/delete-data.html">Delete your data</a>.</li>
+      <li><strong>Questions and complaints:</strong> write to <a href="mailto:kelmoralabs@gmail.com">kelmoralabs@gmail.com</a>; we reply within 30 days. You can then complain to the Data Protection Board of India.</li>
     </ul>
 
     <h2>Children</h2>
