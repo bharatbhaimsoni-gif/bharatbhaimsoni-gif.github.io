@@ -1,4 +1,6 @@
 # Kelmora Labs (Gold Rate, Gujarat Gold): authorized sellers of our apps' ads.
+# Google AdMob, the account of our partner in Gold Rate (30/10/2026).
+google.com, pub-4580657966256185, DIRECT, f08c47fec0942fa0
 # Meta Audience Network, our own account (business Kelmora Labs), through Appodeal (28/10/2026).
 facebook.com, 1464239142253595, DIRECT, c3e20eee3f780d68
 # Appodeal and its partners, from https://appodeal.com/app-ads.txt (24/10/2026), without
